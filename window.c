@@ -116,7 +116,7 @@ void win_init(win_t *win)
 	res_man = XResourceManagerString(e->dpy);
 	db = res_man != NULL ? XrmGetStringDatabase(res_man) : None;
 
-	f = win_res(db, RES_CLASS ".font", "monospace-8");
+	f = win_res(db, RES_CLASS ".font", "courier new-16");
 	win_init_font(e, f);
 
 	bg = win_res(db, RES_CLASS ".background", "white");
